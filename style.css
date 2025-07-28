@@ -1,0 +1,62 @@
+/* Overwriting default content box setting for all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* overwriting browser style for h1 margins.  */
+h1 {
+    margin: 10px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+body {
+    color: rgb(246, 244, 228);
+    background-color: black;
+    font-family: "Roboto", sans-serif;
+}
+
+.card-gray {
+    background-color: rgb(96, 94, 94);
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 30px;
+    transition: all 0.3s;
+    padding: 30px;
+
+    &:hover {
+        box-shadow: rgb(141, 151, 162) 10px 10px 18px;
+    }
+}
+
+/* NOTE!! */
+
+/* An example of a decendant combinator using old syntax */
+#introduction p{
+    font-weight: 700;
+}
+
+/* An example using nested syntax (newer) */
+#introduction {
+    p {
+        font-weight: 700;
+    }
+}
+/* Use whichever one you feel most confident with! :) */
+/* NOTE END */
+
+#img-profile {
+    width: 200px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: scale 0.3s;
+
+    &:hover {
+        scale: 1.1;
+    }
+}
